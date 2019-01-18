@@ -1,0 +1,14 @@
+chdir "$PWD"
+screen -t compile bash
+screen -t code
+select 1
+stuff "cd src && vim -p `find -maxdepth 1 -type f -not -name '.*'`^M"
+
+# no annoying audible bell, please
+vbell on
+
+# detach on hangup
+autodetach on
+
+# don't display the copyright page
+startup_message off
