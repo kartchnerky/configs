@@ -1,0 +1,14 @@
+public class ClassName
+{
+    // Variables
+
+    // Constructors
+    public ClassName()
+    {
+    }
+    
+    @Override
+    public String toString()
+    {
+    }    
+}

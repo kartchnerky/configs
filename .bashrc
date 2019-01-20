@@ -4,7 +4,6 @@
 
 # Custom additions:
 source ~/.my_custom_commands.sh
-cd ~/CS3100/CurrentAssn
 
 # If not running interactively, don't do anything
 case $- in

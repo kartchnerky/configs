@@ -1,0 +1,13 @@
+#ifndef CLASSNAME_HPP
+#define CLASSNAME_HPP
+
+class ClassName
+{
+    public:
+        ClassName();
+
+    private:
+        
+}
+
+#endif /* CLASSNAME_HPP */
