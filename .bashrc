@@ -3,7 +3,7 @@
 # for examples
 
 # Custom additions:
-source ~/.my_custom_commands.sh
+source ~/.my_configs/.my_custom_commands.sh
 
 # If not running interactively, don't do anything
 case $- in

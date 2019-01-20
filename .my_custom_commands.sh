@@ -3,7 +3,7 @@
 # Shortcut for creating a basic cpp file with basic main function:
 function ncpp()
 {
-    cp ~/.cpp_templates/cpp_basic $1.cpp
+    cp ~/.code_templates/cpp/cpp_basic $1.cpp
     vim $1.cpp
 }
 
@@ -35,14 +35,15 @@ function njclass()
             return;
         fi
     fi
-    if [ $2 == 'main' ]
+    if [ $1 == '-main' ]
     then
-        cp ~/.code_templates/java/main_basic $1.java
+        cp ~/.code_templates/java/main_basic $2.java
+        vim -c ":%s/ClassName/$2/g | :w" $2.java  
     else
         cp ~/.code_templates/java/class_basic $1.java
+        vim -c ":%s/ClassName/$1/g | :w" $1.java  
     fi
 
-    vim -c ":%s/ClassName/$1/g | :w" $1.java  
 
 }
 # Shortcut for removing hidden files
