@@ -4,6 +4,7 @@
 
 # Custom additions:
 source ~/.my_configs/.my_custom_commands.sh
+export PATH="$PATH:/opt/gradle/gradle-5.1.1/bin"
 
 # If not running interactively, don't do anything
 case $- in
