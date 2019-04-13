@@ -4,7 +4,10 @@
 
 # Custom additions:
 source ~/.my_configs/.my_custom_commands.sh
-export PATH="$PATH:/opt/gradle/gradle-5.1.1/bin"
+export JAVA_HOME="/usr/java/jdk-11.0.2"
+export PATH="$PATH:/opt/gradle/gradle-5.1.1/bin:$JAVA_HOME/bin"
+export PATH_TO_FX="/usr/java/javafx-sdk-11.0.2/lib"
+export FX="--module-path $PATH_TO_FX --add-modules=javafx.controls,javafx.fxml"
 
 # If not running interactively, don't do anything
 case $- in
